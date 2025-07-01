@@ -16,8 +16,10 @@ const hideS = function () {
   let sRowDisp = window.getComputedStyle(sRow);
   if (sRowDisp.display !== "none") {
     sRow.style.display = "none";
+    linkSaldi.innerText = "Mostra sezione";
   } else {
     sRow.style.display = "flex";
+    linkSaldi.innerText = "Nascondi sezione";
   }
 };
 
@@ -26,8 +28,10 @@ const hideSummer = function () {
   let sumRowDisp = window.getComputedStyle(sumRow);
   if (sumRowDisp.display !== "none") {
     sumRow.style.display = "none";
+    linkSummer.innerText = "Mostra sezione";
   } else {
     sumRow.style.display = "flex";
+    linkSummer.innerText = "Nascondi sezione";
   }
 };
 
